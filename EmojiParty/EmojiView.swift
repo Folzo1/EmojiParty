@@ -34,9 +34,9 @@ struct EmojiView: View {
         BouncyView(emojis: selectedEmojis) { surface in
             switch surface {
             case .emoji:
-                play(sound: "Yuhan being as usual .m4a")
+                play(sound: "AnnoyingYuhan.m4a")
             case .wall:
-                play(sound: "Yuhan no 2.m4a" )
+                play(sound: "Yuhan2Annoying.m4a" )
             }
         }
         
