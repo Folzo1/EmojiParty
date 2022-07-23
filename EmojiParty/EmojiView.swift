@@ -12,7 +12,6 @@ struct EmojiView: View {
     var emojiSet: EmojiSet
     @State var selectedEmojis: [String] = []
     
-    @State var selectedEmojis: [String] = []
     
     var body: some View {
         
