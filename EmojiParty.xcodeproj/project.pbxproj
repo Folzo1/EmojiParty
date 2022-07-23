@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5246BAAA288B8E20002EA246 /* EmojiBouncyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5246BAA9288B8E20002EA246 /* EmojiBouncyView.swift */; };
+		5524F193288B9174006AAF1F /* BouncyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5524F192288B9174006AAF1F /* BouncyView.swift */; };
 		D97D96C0288B879800FC2521 /* EmojiPartyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D96BF288B879800FC2521 /* EmojiPartyApp.swift */; };
 		D97D96C2288B879800FC2521 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D96C1288B879800FC2521 /* ContentView.swift */; };
 		D97D96C4288B879A00FC2521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D97D96C3288B879A00FC2521 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		5246BAA9288B8E20002EA246 /* EmojiBouncyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiBouncyView.swift; sourceTree = "<group>"; };
+		5524F192288B9174006AAF1F /* BouncyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BouncyView.swift; sourceTree = "<group>"; };
 		D97D96BC288B879800FC2521 /* EmojiParty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiParty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97D96BF288B879800FC2521 /* EmojiPartyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPartyApp.swift; sourceTree = "<group>"; };
 		D97D96C1288B879800FC2521 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				D97D96CF288B894200FC2521 /* EmojiView.swift */,
 				D97D96CD288B87C500FC2521 /* EmojiSet.swift */,
 				5246BAA9288B8E20002EA246 /* EmojiBouncyView.swift */,
+				5524F192288B9174006AAF1F /* BouncyView.swift */,
 				D97D96C3288B879A00FC2521 /* Assets.xcassets */,
 				D97D96C5288B879A00FC2521 /* Preview Content */,
 			);
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5524F193288B9174006AAF1F /* BouncyView.swift in Sources */,
 				5246BAAA288B8E20002EA246 /* EmojiBouncyView.swift in Sources */,
 				D97D96CE288B87C500FC2521 /* EmojiSet.swift in Sources */,
 				D97D96D0288B894200FC2521 /* EmojiView.swift in Sources */,
