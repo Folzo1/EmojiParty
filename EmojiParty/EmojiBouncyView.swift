@@ -8,8 +8,8 @@
 import UIKit
 
 enum CollisionSurface {
- case emoji
- case wall
+    case emoji
+    case wall
 }
 
 class EmojiBouncyView: UIView, UICollisionBehaviorDelegate {
@@ -19,10 +19,10 @@ class EmojiBouncyView: UIView, UICollisionBehaviorDelegate {
     
     
     var onCollide: ((CollisionSurface) -> Void)
-
+    
     init(onCollide: @escaping ((CollisionSurface) -> Void)) {
-
-    self.onCollide = onCollide
+        
+        self.onCollide = onCollide
         
         super.init(frame: .zero)
         animator = UIDynamicAnimator(referenceView: self)
@@ -75,17 +75,22 @@ class EmojiBouncyView: UIView, UICollisionBehaviorDelegate {
             push.removeItem(label)
             self.dynamics.removeItem(label)
             self.collisions.removeItem(label)
-}
-func collisionBehavior(_ behavior: UICollisionBehavior,
-                       beganContactFor item1: UIDynamicItem,
-                       with item2: UIDynamicItem, at p: CGPoint) {
-    onCollide(.emoji)
-}
-
-func collisionBehavior(_ behavior: UICollisionBehavior,
-                       endedContactFor item: UIDynamicItem,
-                       withBoundaryIdentifier identifier: NSCopying?) {
-    onCollide(.wall)
         }
+        
     }
+    
+    func collisionBehavior(_ behavior: UICollisionBehavior,
+                           beganContactFor item1: UIDynamicItem,
+                           with item2: UIDynamicItem, at p: CGPoint) {
+        onCollide(.emoji)
+        print("emoji")
+    }
+    
+    func collisionBehavior(_ behavior: UICollisionBehavior,
+                           endedContactFor item: UIDynamicItem,
+                           withBoundaryIdentifier identifier: NSCopying?) {
+        onCollide(.wall)
+        print("wall")
+    }
+
 }

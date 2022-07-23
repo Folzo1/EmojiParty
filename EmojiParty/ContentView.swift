@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Subsonic
 
 struct ContentView: View {
     
@@ -19,7 +20,6 @@ struct ContentView: View {
     ]
     
     var body: some View {
-        
         NavigationView {
             
             List(emojiSets) { emojiSet in
@@ -36,8 +36,13 @@ struct ContentView: View {
             .navigationTitle("Emoji Party 🎉")
         }
         
+        
+//        Button("Play sound") {
+//            play(sound: "Yuhan2Annoying.m4a")
+            
+        }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
