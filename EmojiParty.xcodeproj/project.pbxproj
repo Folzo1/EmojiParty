@@ -14,6 +14,7 @@
 		D97D96C7288B879A00FC2521 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D97D96C6288B879A00FC2521 /* Preview Assets.xcassets */; };
 		D97D96CE288B87C500FC2521 /* EmojiSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D96CD288B87C500FC2521 /* EmojiSet.swift */; };
 		D97D96D0288B894200FC2521 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97D96CF288B894200FC2521 /* EmojiView.swift */; };
+		D97D96D3288B907400FC2521 /* Subsonic in Frameworks */ = {isa = PBXBuildFile; productRef = D97D96D2288B907400FC2521 /* Subsonic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97D96D3288B907400FC2521 /* Subsonic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,9 @@
 			dependencies = (
 			);
 			name = EmojiParty;
+			packageProductDependencies = (
+				D97D96D2288B907400FC2521 /* Subsonic */,
+			);
 			productName = EmojiParty;
 			productReference = D97D96BC288B879800FC2521 /* EmojiParty.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +125,9 @@
 				Base,
 			);
 			mainGroup = D97D96B3288B879800FC2521;
+			packageReferences = (
+				D97D96D1288B907400FC2521 /* XCRemoteSwiftPackageReference "subsonic" */,
+			);
 			productRefGroup = D97D96BD288B879800FC2521 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D97D96D1288B907400FC2521 /* XCRemoteSwiftPackageReference "subsonic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/subsonic";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D97D96D2288B907400FC2521 /* Subsonic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D97D96D1288B907400FC2521 /* XCRemoteSwiftPackageReference "subsonic" */;
+			productName = Subsonic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D97D96B4288B879800FC2521 /* Project object */;
 }
