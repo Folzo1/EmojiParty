@@ -11,12 +11,18 @@ struct EmojiView: View {
     
     var emojiSet: EmojiSet
     
+    @State var selectedEmojis: [String] = []
+    
     var body: some View {
         
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
             ForEach(emojiSet.emojis, id: \.self) { emoji in
-                Text(emoji)
-                    .font(.system(size: 100))
+                Button {
+                    selectedEmojis.append(emoji)
+                } label: {
+                    Text(emoji)
+                        .font(.system(size: 100))
+                }
             }
         }
     }
