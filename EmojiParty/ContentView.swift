@@ -11,8 +11,9 @@ struct ContentView: View {
     
     var emojiSets = [
         
-        EmojiSet(name: "Fruits", emojis: ["🍌", "🍎"]),
-        EmojiSet(name: "Candy", emojis: ["🍬", "🍫"])
+        EmojiSet(name: "Fruits", emojis: ["🍌", "🍎", "🍇", "🥥", " 🍅"]),
+        EmojiSet(name: "Candy", emojis: ["🍬", "🍫", "☃", "🍩", "🪬"]),
+        EmojiSet(name: "Animals", emojis: ["🐧", "🦦", "🐋", "🦧", "🦥"])
         
     ]
     
