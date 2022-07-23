@@ -13,7 +13,8 @@ struct ContentView: View {
         
         EmojiSet(name: "Fruits", emojis: ["🍌", "🍎", "🍇", "🥥", " 🍅"]),
         EmojiSet(name: "Candy", emojis: ["🍬", "🍫", "☃", "🍩", "🪬"]),
-        EmojiSet(name: "Animals", emojis: ["🐧", "🦦", "🐋", "🦧", "🦥"])
+        EmojiSet(name: "Animals", emojis: ["🐧", "🦦", "🐋", "🦧", "🦥"]),
+        EmojiSet(name: "Something", emojis: ["💩", "💩","💩","💩","💩","💩","💩","💩","💩","💩","💩","💩"])
         
     ]
     
